@@ -486,6 +486,43 @@ button,input,select,textarea{font-family:inherit}
 .user-services-card .service-option,.user-services-card .service-option:hover{background:transparent;border-bottom-color:var(--mobile-line);box-shadow:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}.user-services-card .service-option:last-child,.user-services-card .service-option:last-child:hover{border-bottom:0}.user-services-card .service-option:active{background:#eef4fb}.user-services-card .service-option.selected,.user-services-card .service-option.selected:hover{background:#eef4fb;border-bottom-color:var(--mobile-line);box-shadow:inset 3px 0 0 var(--mobile-accent)}
 @media(max-width:800px){.top-app-buttons{gap:4px}.top-app-buttons .btn{padding:8px!important}.top-app-buttons .btn .hgi{margin:0}.top-app-buttons .btn{font-size:0!important}.phone-shell.app-preview-shell{right:50%;transform:translate(50%,-50%);width:min(390px,94vw)}.phone-mode-label{display:none}}
 
+/* === V17: agenda completa + identidades horizontais nos cadastros === */
+.cal-event{
+  height:auto!important;
+  min-height:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  overflow:hidden!important
+}
+.cal-service,.cal-address{
+  display:block!important;
+  overflow:visible!important;
+  white-space:normal!important;
+  -webkit-line-clamp:unset!important;
+  -webkit-box-orient:initial!important
+}
+.cal-client{white-space:normal!important;line-height:1.35!important}
+.event-footer{width:100%!important;flex:0 0 auto!important;flex-wrap:wrap!important}
+.event-tech{max-width:100%!important;flex-shrink:0!important}
+
+.data-table .item-main{
+  display:grid!important;
+  grid-template-columns:auto minmax(0,1fr)!important;
+  align-items:center!important;
+  column-gap:12px!important;
+  min-width:240px
+}
+.data-table .item-main>.item-icon,
+.data-table .item-main>.item-thumb,
+.data-table .item-main>.unit-avatar{grid-column:1!important;grid-row:1!important;margin:0!important}
+.data-table .item-main>.item-name{grid-column:2!important;grid-row:1!important;min-width:0!important}
+.data-table .item-name b{font-weight:800!important;line-height:1.3!important}
+.data-table .item-name span{font-size:10.5px!important;line-height:1.4!important;white-space:normal!important}
+#serviceRows .item-main{min-width:390px}
+#materialRows .item-main{min-width:360px}
+#unitRows .item-main{min-width:230px}
+
 </style>
 </link></head>
 <body>
