@@ -481,6 +481,9 @@ button,input,select,textarea{font-family:inherit}
 
 /* === V15: catálogo do usuário agrupado e navegação com ícones consistentes === */
 .user-services-card{padding:0 12px!important;border:1px solid #dfe4e8!important;border-radius:8px!important;background:#fff!important;margin-bottom:12px!important}.user-services-card .mobile-section-title{margin:0;padding:11px 0 9px}.user-services-card .mobile-section-title h4{font-size:11px}.user-services-card .service-grid{border-top:1px solid var(--mobile-line)}.user-services-card .service-option{padding:10px 1px}.user-services-card .service-option:last-child{border-bottom:0}.user-services-card .service-icon .hgi{font-size:15px}.mobile-bottom-nav button .hgi{display:inline-flex;width:20px;height:20px;align-items:center;justify-content:center;font-size:18px;line-height:1}
+
+/* === V16: remove hover retido em telas touch === */
+.user-services-card .service-option,.user-services-card .service-option:hover{background:transparent;border-bottom-color:var(--mobile-line);box-shadow:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}.user-services-card .service-option:last-child,.user-services-card .service-option:last-child:hover{border-bottom:0}.user-services-card .service-option:active{background:#eef4fb}.user-services-card .service-option.selected,.user-services-card .service-option.selected:hover{background:#eef4fb;border-bottom-color:var(--mobile-line);box-shadow:inset 3px 0 0 var(--mobile-accent)}
 @media(max-width:800px){.top-app-buttons{gap:4px}.top-app-buttons .btn{padding:8px!important}.top-app-buttons .btn .hgi{margin:0}.top-app-buttons .btn{font-size:0!important}.phone-shell.app-preview-shell{right:50%;transform:translate(50%,-50%);width:min(390px,94vw)}.phone-mode-label{display:none}}
 
 </style>
